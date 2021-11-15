@@ -18,6 +18,9 @@ function Index( props ) {
                             <a target="_blank" rel="noreferrer" href="https://www.jogjakota.go.id/" className="footer-link">Dinas Kota Yogyakarta</a>
                         </li>
                         <li>
+                            <a target="_blank" rel="noreferrer" href="https://diy.kemenag.go.id/" className="footer-link">Kemenag DIY</a>
+                        </li>
+                        <li>
                             <a target="_blank" rel="noreferrer" href="https://dindikpora.jogjakota.go.id/" className="footer-link">Dikpora Kota Yogyakarta</a>
                         </li>
                     </ul>
