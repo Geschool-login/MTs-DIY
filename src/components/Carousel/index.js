@@ -57,11 +57,19 @@ function Index() {
                         autoplaySpeed={2000}
                     >
                         {
-                            logos.map((item) => (
-                                <div className="item mr-3">
+                            logos.map((item, index) => (
+                                <div key={index} className="item mr-3">
                                     <div className="col-xs-4 d-flex flex-column align-items-center">
-                                        {/* {item.icon === '' ? <img src={LogoEmpty} alt="logo-school" className="img-responsive mb-3 logo-img" /> : <img src={`https://sleman.geschool.net${item.icon}`} alt="logo-school" className="img-responsive mb-3 logo-img" />} */}
-                                        {item.icon === '' ? <div alt="logo-school" className="img-responsive mb-3 logo-img"><img src={LogoEmpty} alt="" /></div> : <div alt="logo-school" className="img-responsive mb-3 logo-img" ><img src={`https://mtsdiy.geschool.net${item.icon}`} alt="" /></div>}
+                                        {
+                                            item.icon === '' ? 
+                                                <div className="img-responsive mb-3 logo-img">
+                                                    <img src={LogoEmpty} alt="logo-school" />
+                                                </div> 
+                                            : 
+                                                <div className="img-responsive mb-3 logo-img" >
+                                                    <img src={item.icon} alt="logo-school" />
+                                                </div>
+                                        }
                                         <p>{item.name}</p>
                                     </div>
                                 </div>
